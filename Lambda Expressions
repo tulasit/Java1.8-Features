@@ -16,7 +16,7 @@ Java lambda expression is consisted of three components.
 
 3) Body: It contains expressions and statements for lambda expression.
 
-Why I got error in this codition:
+** Why I got error in this codition:
  
    D:\Java Practice\Java1.8 Lambda Experssion>javac TestDemo.java
             TestDemo.java:10: error: incompatible types: TestDemo is not a functional interface
@@ -38,7 +38,7 @@ class TestDemo
 		t.testDemo();
    }
 }
-@***** so lambdaexpression needs functional interface
+@***** so lambdaexpression needs only  functional interface
 
 If lambda expression with functional interface
   interface ITestDemo
