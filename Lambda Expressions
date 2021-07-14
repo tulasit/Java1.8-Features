@@ -38,6 +38,23 @@ class TestDemo
 		t.testDemo();
    }
 }
- so lambdaexpression needs functional interface
+@***** so lambdaexpression needs functional interface
+
+If lambda expression with functional interface
+  interface ITestDemo
+{
+	public void demo();
+}
+class TestDemo
+{
+   
+   public static void main(String args[])
+   {  
+        ITestDemo t=()->{System.out.println("Hello  Lambda Expression needs functional interface");};
+
+		t.demo();
+   }
+}
+
 
 
