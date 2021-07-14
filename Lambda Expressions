@@ -38,9 +38,10 @@ class TestDemo
 		t.testDemo();
    }
 }
-@***** so lambdaexpression needs only  functional interface
+@***** so lambdaexpression needs only  functional interface 
 
-If lambda expression with functional interface
+------If lambda expression with functional interface with out parameter
+
   interface ITestDemo
 {
 	public void demo();
@@ -57,4 +58,19 @@ class TestDemo
 }
 
 
+******** Lambda Expression with parameter
+
+    interface TestDemo{
+  public String say(String name);
+}
+class Ltt
+{
+   public static void main(String args[])
+   {
+       TestDemo t=tulasi->{ return "Hello,"+tulasi; };
+	     System.out.println(t.say("Tulasi"));
+   }
+   
+}
+   **  method parameter can change at lambada expersion  but while using lambda expression you use argument name  as  same as argument statement
 
