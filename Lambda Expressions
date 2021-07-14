@@ -16,15 +16,28 @@ Java lambda expression is consisted of three components.
 
 3) Body: It contains expressions and statements for lambda expression.
 
-Ex:
-        class Student
-        { 
-            public void stringNTulasi
-             {
-               System.out.println("Tulasi is main");
-              }
-               
-               Student s=new Student()
-                     s.stringNTulasi
+Why I got error in this codition:
+ 
+   D:\Java Practice\Java1.8 Lambda Experssion>javac TestDemo.java
+            TestDemo.java:10: error: incompatible types: TestDemo is not a functional interface
+                TestDemo t=()->{System.out.println("TestDemo");};
+                   ^
+1 error
+
+class TestDemo
+{
+   void testDemo()
+   {
+     
+	 System.out.println("testDemo");
+   }
+   public static void main(String args[])
+   {  
+        TestDemo t=()->{System.out.println("TestDemo");};
+
+		t.testDemo();
+   }
+}
+ so lambdaexpression needs functional interface
 
 
