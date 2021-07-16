@@ -74,3 +74,35 @@ class Ltt
 }
    **  method parameter can change at lambada expersion  but while using lambda expression you use argument name  as  same as argument statement
 
+
+
+
+
+  Java Lambda Expression Example: Multiple Parameters
+  
+  interface Addable{  
+    int add(int a,int b);  
+}  
+public class LambdaExpresswithoutparameter
+{
+	
+	 public static void main(String args[])
+	 { 
+
+             	// Addable ad=(a,b)->{return a+b;};
+				 //System.out.println(ad.add(10,20));
+				   // OR
+		         Addable ad1=(a,b)->(a+b);  
+                System.out.println(ad1.add(10,20));  
+		 
+	 }
+}
+  
+   
+
+Java Lambda Expression Example: with or without return keyword
+
+
+
+
+
