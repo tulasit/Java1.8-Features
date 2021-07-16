@@ -119,6 +119,26 @@ public class LambdaReturnExample
 }
 
 
+::::::Java Lambda Expression Example: Foreach Loop
+
+import java.util.*;
+public class ForEachwithLambda
+{
+    public static void main(String args[])
+	{
+	    List<String> l= new ArrayList<String>();
+		            l.add("tulasi");
+					l.add("thota");
+					l.add("I am happy");
+					l.add("I also haungry for the job");
+					
+	
+		  l.forEach((n)->System.out.println(n));  
+		
+	}
+}
+
+
 
 
 
