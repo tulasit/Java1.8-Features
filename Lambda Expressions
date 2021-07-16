@@ -102,6 +102,22 @@ public class LambdaExpresswithoutparameter
 
 Java Lambda Expression Example: with or without return keyword
 
+interface addable
+{  
+   String printName(String name);
+   
+}
+public class LambdaReturnExample
+{
+  public static void main(String args[])
+  {
+       addable printname=(name)->(name);//If it is single parameter no need return statement
+	   System.out.println(printname.printName("TulasiThota"));
+  
+  }
+
+}
+
 
 
 
